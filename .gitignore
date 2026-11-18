@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+results/run_log_*.txt
+results/campaign_nhanh/
+results/campaign_run.log

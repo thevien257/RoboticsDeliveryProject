@@ -1,0 +1,306 @@
+{
+ "thoi_diem": "2026-11-18 04:34:14",
+ "lenh": "python experiments/campaign.py ",
+ "thoi_gian_chay_s": 2.9,
+ "git_commit": "ee4b8177d4c4b604229ceb4c4300138ffe1a3bc6",
+ "ma_nguon_co_sua_chua_commit": false,
+ "python": "3.12.3",
+ "thu_vien": {
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "pandas": "3.1.1",
+  "matplotlib": "3.11.2"
+ },
+ "so_luot": {
+  "E0": {
+   "luot": 4240,
+   "loi": 0
+  },
+  "E1": {
+   "luot": 200,
+   "loi": 0
+  },
+  "E2": {
+   "luot": 48,
+   "loi": 0
+  },
+  "E3": {
+   "luot": 32,
+   "loi": 0
+  },
+  "E4": {
+   "luot": 1620,
+   "loi": 0
+  }
+ },
+ "tham_so_chon": {
+  "PID": {
+   "params": {
+    "Kp": 120.0,
+    "Ki": 80.0,
+    "Kd": 30.0
+   },
+   "cau_truc": "PID",
+   "kha_thi": true,
+   "metrics": {
+    "overshoot": 24.81094233801841,
+    "settle": 1.42,
+    "residual": 0.10571866293481101,
+    "ess_bias": 0.417425904183552,
+    "ess_circle": 6.901607878307447,
+    "rms": 2.876867696885983,
+    "p95": 6.083455742966427,
+    "jerk": 6.652772715914104,
+    "lost": 0.0
+   }
+  },
+  "LQR": {
+   "params": {
+    "e_y_max_mm": 1.0,
+    "e_theta_max_deg": 10.0,
+    "omega_max": 3.0,
+    "z_max_mm_s": 8.0
+   },
+   "cau_truc": "LQI",
+   "kha_thi": true,
+   "metrics": {
+    "overshoot": 6.208308534315142,
+    "settle": 0.395,
+    "residual": 0.08549517067911301,
+    "ess_bias": 0.892070739908928,
+    "ess_circle": 2.041142392952379,
+    "rms": 1.6402999131397031,
+    "p95": 3.3132914113987653,
+    "jerk": 115.96665458758937,
+    "lost": 0.0
+   }
+  }
+ },
+ "cau_hinh": {
+  "mo_ta": "Bộ thí nghiệm cho báo cáo. E0 chỉnh định PID và LQR bằng lưới tham số; E1 so sánh PID* với LQR* (tham số tốt nhất của E0) trên dữ liệu kiểm tra độc lập; E2 học map; E3 tình huống khi giao hàng; E4 lập lịch.",
+  "so_tien_trinh": 4,
+  "E0": {
+   "PID": {
+    "Kp": [
+     10,
+     20,
+     40,
+     60,
+     80,
+     120,
+     200
+    ],
+    "Ki": [
+     0,
+     10,
+     20,
+     40,
+     80
+    ],
+    "Kd": [
+     0,
+     5,
+     10,
+     20,
+     30,
+     40
+    ]
+   },
+   "LQR": {
+    "e_y_max_mm": [
+     1,
+     2,
+     3,
+     5
+    ],
+    "e_theta_max_deg": [
+     10,
+     20,
+     30,
+     45
+    ],
+    "omega_max": [
+     2,
+     3,
+     5,
+     8
+    ],
+    "z_max_mm_s": [
+     0,
+     1,
+     2,
+     4,
+     8
+    ]
+   },
+   "ghi_chu": "z_max_mm_s = 0: không có khâu tích phân (LQR thuần); > 0: LQI với giới hạn Bryson của tích phân sai lệch e_y.",
+   "phep_thu": [
+    {
+     "loai": "buoc",
+     "lech_m": 0.02,
+     "v": 0.3,
+     "seeds": [
+      0,
+      1
+     ]
+    },
+    {
+     "loai": "buoc_lech_dong_co",
+     "lech_m": 0.02,
+     "v": 0.3,
+     "dong_co_lech": 0.2,
+     "seeds": [
+      0
+     ]
+    },
+    {
+     "loai": "duong",
+     "duong": "mixed",
+     "v": 0.2,
+     "seeds": [
+      0
+     ]
+    },
+    {
+     "loai": "duong",
+     "duong": "mixed",
+     "v": 0.3,
+     "seeds": [
+      0,
+      1
+     ]
+    },
+    {
+     "loai": "duong",
+     "duong": "mixed",
+     "v": 0.4,
+     "seeds": [
+      0
+     ]
+    },
+    {
+     "loai": "duong",
+     "duong": "circle_0.3",
+     "v": 0.3,
+     "cho_hang": true,
+     "seeds": [
+      0
+     ]
+    }
+   ],
+   "luat_chon": {
+    "mat_line_toi_da": 0,
+    "phai_hoan_thanh": true,
+    "vot_lo_toi_da_pct": 30,
+    "dao_dong_con_lai_toi_da_mm": 2.0,
+    "sai_lech_tinh_toi_da_mm": 1.0,
+    "cau_truc_day_du": "PID: Kp, Ki, Kd đều > 0; LQR: có khâu tích phân (LQI)",
+    "toi_uu": "RMS lệch line trung bình trên các phép thử đường (nhỏ nhất); hoà thì chọn độ giật lệnh nhỏ hơn"
+   }
+  },
+  "E1": {
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "duong_toc_do": {
+    "duong": [
+     "wave",
+     "circle_0.15",
+     "circle_0.5"
+    ],
+    "v": [
+     0.2,
+     0.3,
+     0.4
+    ]
+   },
+   "nhieu_cam_bien": {
+    "duong": "wave",
+    "v": 0.3,
+    "muc": [
+     0.0,
+     0.03,
+     0.06,
+     0.1,
+     0.15
+    ]
+   },
+   "nhieu_loan": {
+    "duong": "wave",
+    "v": 0.3,
+    "dong_co_lech": [
+     0.0,
+     0.1,
+     0.2
+    ],
+    "cho_hang": [
+     false,
+     true
+    ]
+   },
+   "ghi_chu": "Dải tốc độ vận hành của robot 0,2–0,4 m/s (MT1)."
+  },
+  "E2": {
+   "san": [
+    "kho",
+    "luoi"
+   ],
+   "muc_sai_so_banh": [
+    "Thấp",
+    "Trung bình",
+    "Cao"
+   ],
+   "cau_hinh": [
+    "encoder + gyro (đề xuất)",
+    "chỉ encoder",
+    "gyro, nhận dạng đơn giản",
+    "gyro, không pose graph"
+   ],
+   "seeds": [
+    0,
+    1
+   ],
+   "ghi_chu": "Bỏ mức Lý tưởng (mọi cấu hình đều đúng) để cả bộ thí nghiệm chạy dưới 1 phút."
+  },
+  "E3": {
+   "kich_ban": [
+    "Bình thường",
+    "Người đi ngang tuyến",
+    "Vật cản chắn đoạn J2–J4",
+    "Line mòn/đứt 2 chỗ",
+    "Sàn trơn",
+    "Ánh sáng nhiễu mạnh",
+    "Pin yếu (ω_max −40%)",
+    "Tải nặng (τ = 0,18 s)"
+   ],
+   "bo_dieu_khien": [
+    "PID*",
+    "LQR*"
+   ],
+   "seeds": [
+    0,
+    1
+   ]
+  },
+  "E4": {
+   "so_don": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "lap_lai": 30,
+   "suc_chua": [
+    1,
+    2,
+    3
+   ]
+  }
+ }
+}

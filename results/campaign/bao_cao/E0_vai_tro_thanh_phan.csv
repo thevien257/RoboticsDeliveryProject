@@ -1,0 +1,7 @@
+﻿cau_truc,so_bo_tham_so,so_bo_kha_thi,tham_so_tot_nhat,rms_mm,vot_lo_pct,dao_dong_con_lai_mm,sai_lech_tinh_dong_co_lech_mm,sai_lech_tinh_duong_tron_mm,do_giat,mat_line,kha_thi
+P,7,0,"Kp = 80, Ki = 0, Kd = 0",22.7,201.5,40.21,0.9541,11.34,19.61,54,False
+PI,28,0,"Kp = 80, Ki = 20, Kd = 0",22.53,202.3,40.17,0.02082,10.14,19.69,54,False
+PD,35,0,"Kp = 60, Ki = 0, Kd = 20",1.896,15.95,0.0369,14.42,1.023,4.827,0,False
+PID,140,1,"Kp = 120, Ki = 80, Kd = 30",2.877,24.81,0.1057,0.4174,6.902,6.653,0,True
+LQR,64,8,"e_y_max_mm = 1, e_theta_max_deg = 10, omega_max = 5, z_max_mm_s = 0",0.9645,2.089,0.1441,0.9554,0.9366,215.2,0,True
+LQI,256,213,"e_y_max_mm = 1, e_theta_max_deg = 10, omega_max = 3, z_max_mm_s = 8",1.64,6.208,0.0855,0.8921,2.041,116,0,True

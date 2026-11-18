@@ -1,0 +1,8 @@
+﻿ma,muc_tieu,tieu_chi,ket_qua,danh_gia
+MT1,"Bám line ổn định (PID, LQR)","RMS < 5 mm, không mất line ở v ≤ 0,4 m/s trên đường kiểm tra","LQR*: RMS TB 1.62 mm, mất line 0/45 lượt; PID*: RMS TB 3.76 mm, mất line 0/45 lượt",Đạt
+MT2,Tự học bản đồ không dùng mốc,"đúng hoàn toàn ≥ 90 % lượt (cấu hình đề xuất, sai số Trung bình)",100 % (4 lượt),Đạt
+MT3,Định vị nút đủ chính xác,sai số nút TB < 100 mm,19 ± 11 mm,Đạt
+MT4,"Giao đúng trạm, dừng chính xác","thành công 100 %, sai số dừng TB < 10 mm (kịch bản bình thường)","thành công 100 %, sai số dừng 4.1 mm",Đạt
+MT5,Xử lý tình huống,"hoàn thành mọi kịch bản tình huống, không va chạm",8/8 kịch bản; va chạm 0,Đạt
+MT6,Lập lịch tối ưu,QHĐ không dài hơn FIFO/tham lam ở mọi bộ đơn; tính < 10 ms với ≤ 7 đơn (chở 1 kiện),QHĐ ngắn nhất ở 540/540 bộ đơn; 2.51 ms với 7 đơn (sức chứa 3: 28.4 ms),Đạt
+MT7,GUI cho toàn bộ quy trình,"vẽ sân → học map → gán trạm → giao hàng, đổi thuật toán khi chạy",kiểm tra trên GUI,Đạt

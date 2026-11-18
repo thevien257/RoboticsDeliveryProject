@@ -1,0 +1,3 @@
+﻿bo_dieu_khien,tham_so,kha_thi,rms_mm,p95_mm,vot_lo_pct,xac_lap_s,dao_dong_con_lai_mm,sai_lech_tinh_duong_tron_mm,do_giat,mat_line
+PID*,"Kp = 120, Ki = 80, Kd = 30",True,2.877,6.083,24.81,1.42,0.1057,6.902,6.653,0
+LQR*,"e_y_max_mm = 1, e_theta_max_deg = 10, omega_max = 3, z_max_mm_s = 8",True,1.64,3.313,6.208,0.395,0.0855,2.041,116,0
