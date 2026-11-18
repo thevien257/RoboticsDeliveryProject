@@ -101,8 +101,3 @@ sim/
   export.py, report_export.py   xuất dữ liệu lượt chạy GUI
 experiments/        campaign.py · campaign_report.py · campaign_config.json · diagrams.py
 results/campaign/   dữ liệu thô, tham số tốt nhất, bảng/hình báo cáo
-```
-
-Kiến thức kế thừa (động học vi sai, PID, LQR/Bryson, bản đồ topo, pose graph, hiệu chuẩn odometry, Dijkstra, Held–Karp)
-được trích dẫn trong báo cáo. Mã nguồn do nhóm viết, có dùng công cụ AI hỗ trợ; nhóm tự kiểm tra kết quả.
-# RoboticsDeliveryProject
