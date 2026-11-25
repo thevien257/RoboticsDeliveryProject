@@ -4,7 +4,7 @@ Học phần Kỹ thuật Robot · Đề tài: *robot vận chuyển hàng trong
 
 Robot tự chạy trên mạng line **chưa biết trước**, tự dựng bản đồ nút–cạnh, rồi giao hàng giữa các trạm do người dùng gán.
 
-📄 Báo cáo cuối kỳ: [`report/BaoCao_KyThuatRobot.pdf`](report/BaoCao_KyThuatRobot.pdf) (bản Word: `report/BaoCao_KyThuatRobot.docx`)
+📄 Báo cáo cuối kỳ: [`report/BaoCao_KyThuatRobot_EN.pdf`](report/BaoCao_KyThuatRobot_EN.pdf) (bản Word: `report/BaoCao_KyThuatRobot_EN.docx`)
 
 ![GUI khi giao hàng](docs/gui_giao_hang.png)
 
